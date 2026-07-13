@@ -34,6 +34,10 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
+const externalNavLinks = [
+  { to: "/careers", label: "Recruitment" },
+];
+
 // TanStack Route removed
 
 const modules = [
@@ -99,6 +103,9 @@ function LandingPage() {
             {navLinks.map((n) => (
               <a key={n.href} href={n.href} className="hover:text-foreground">{n.label}</a>
             ))}
+            {externalNavLinks.map((n) => (
+              <Link key={n.to} to={n.to} className="hover:text-foreground">{n.label}</Link>
+            ))}
           </nav>
           <div className="flex items-center gap-1.5 sm:gap-2">
             <LanguageSwitcher compact />
@@ -142,6 +149,15 @@ function LandingPage() {
                     className="rounded-lg px-3 py-2.5 hover:bg-accent/40 hover:text-foreground">
                     {n.label}
                   </a>
+                ))}
+                {externalNavLinks.map((n) => (
+                  <Link
+                    key={n.to}
+                    to={n.to}
+                    onClick={() => setMenuOpen(false)}
+                    className="rounded-lg px-3 py-2.5 hover:bg-accent/40 hover:text-foreground">
+                    {n.label}
+                  </Link>
                 ))}
                 <Link
                   to="/login"
@@ -214,7 +230,7 @@ function LandingPage() {
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
                 <span className="h-2.5 w-2.5 rounded-full bg-warning/70" />
                 <span className="h-2.5 w-2.5 rounded-full bg-success/70" />
-                <span className="ml-3 text-[11px] font-medium text-muted-foreground">ipms.inades.rw / dashboard</span>
+                <span className="ml-3 truncate text-[11px] font-medium text-muted-foreground">DMS INADES System / dashboard</span>
               </div>
               <div className="grid gap-4 p-5 sm:grid-cols-3">
                 {[
@@ -459,6 +475,7 @@ function LandingPage() {
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li><a className="hover:text-primary" href="#features">Features</a></li>
               <li><a className="hover:text-primary" href="#benefits">Benefits</a></li>
+              <li><Link className="hover:text-primary" to="/careers">Recruitment</Link></li>
               <li><Link className="hover:text-primary" to="/login">Sign in</Link></li>
             </ul>
           </div>
@@ -474,7 +491,7 @@ function LandingPage() {
             <p className="text-sm font-semibold text-foreground">Contact</p>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li>Kigali, Rwanda</li>
-              <li>ipms@inades.rw</li>
+              <li>dms@inades.rw</li>
               <li>+250 000 000 000</li>
             </ul>
           </div>

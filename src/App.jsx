@@ -9,6 +9,7 @@ import { AuthShell as AuthLayout } from './components/auth/AuthShell';
 
 // Pages
 import IndexPage from './pages/index';
+import CareersPage from './pages/careers';
 import LoginPage from './pages/login';
 import OtpPage from './pages/otp';
 import ForgotPasswordPage from './pages/forgot-password';
@@ -69,7 +70,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<IndexPage />} />
-            
+            <Route path="/careers" element={<CareersPage />} />
+
             {/* Auth Routes */}
             <Route path="/login" element={<LoginPage />} />
             <Route path="/otp" element={<OtpPage />} />

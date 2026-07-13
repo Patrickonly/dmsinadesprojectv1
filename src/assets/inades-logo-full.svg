@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="INADES-Formation">
+  <!-- icon mark -->
+  <g transform="translate(0 4)">
+    <circle cx="26" cy="26" r="26" fill="#F58220"/>
+    <rect x="6" y="11" width="5" height="30" fill="#FFFFFF"/>
+    <rect x="41" y="11" width="5" height="30" fill="#FFFFFF"/>
+    <rect x="11" y="11" width="9" height="5" fill="#FFFFFF"/>
+    <rect x="32" y="11" width="9" height="5" fill="#FFFFFF"/>
+    <rect x="11" y="36" width="9" height="5" fill="#FFFFFF"/>
+    <rect x="32" y="36" width="9" height="5" fill="#FFFFFF"/>
+    <ellipse cx="26" cy="26" rx="12.5" ry="7.5" fill="#FFFFFF"/>
+    <text x="26" y="29" font-family="Georgia, serif" font-size="6.2" font-weight="700" fill="#F58220" text-anchor="middle">INADES</text>
+    <text x="26" y="53" font-family="Arial, sans-serif" font-size="6" font-weight="600" fill="#F58220" text-anchor="middle">Formation</text>
+  </g>
+  <!-- wordmark -->
+  <text x="66" y="30" font-family="Georgia, serif" font-size="24" font-weight="700" fill="#F58220">INADES-Formation</text>
+  <text x="66" y="45" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#F58220">Servir le bien commun</text>
+  <text x="66" y="57" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#F58220">Serving common good</text>
+</svg>

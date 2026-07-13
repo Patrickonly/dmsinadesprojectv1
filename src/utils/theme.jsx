@@ -1,13 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-
 const KEY = "dms.theme";
-
-
-
-
-
-
 
 const Ctx = createContext(undefined);
 
@@ -16,8 +9,7 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     const saved = typeof window !== "undefined" && localStorage.getItem(KEY) || null;
-    const prefersDark = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches;
-    setTheme(saved ?? (prefersDark ? "dark" : "light"));
+    setTheme(saved ?? "light");
   }, []);
 
   useEffect(() => {
